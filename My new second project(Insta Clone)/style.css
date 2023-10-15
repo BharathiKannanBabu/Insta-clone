@@ -1,0 +1,598 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Left Box Section */
+.insta-small-logo{
+    position: absolute;
+    top: 5px;
+    left: 0;
+    visibility: hidden;
+}
+.insta-small-logo i{
+    font-size: 30px;
+    cursor: pointer; 
+}
+.left-box{
+    position: relative;
+    border-right: 2px solid lightgray;
+    width: 270px !important;
+    height: 100vh;
+    position: fixed;
+}
+
+.left-box .content{
+    position: absolute;
+    top: 40px;
+    left: 26px;
+    cursor: pointer;
+}
+.insta-text-logo{
+    height: 45px;
+}
+nav{
+    position: absolute;
+    top: 84px;
+    cursor: pointer;
+    width: 244px;
+}
+nav li img{
+    height: 31px;
+    border-radius: 50%;
+    width: 28px;
+    transition: .2s;
+}
+.icons:hover li img{
+    height: 33px;
+    width: 30px;
+    transition: .2s;
+}
+.icons{
+    display: flex;
+    gap: 17px;
+    margin-bottom: 19px;
+    border-radius: 10px;
+    height: 45px;
+    align-items: center;
+    padding-left: 10px;
+    position: relative;
+    right: 12px;
+}
+.icons:hover{
+   background: #ebebeb;
+   transition: .3s;
+}
+.icons:hover i{
+    font-size: 34px;
+    transition: .2s;
+}
+.icons i{
+    font-size: 30px;
+    transition: .2s;
+}
+.icons span{
+    font-size: 20px;
+    font-weight: 100;
+}
+li{
+    list-style: none;
+}
+
+/* Middle Box Section */
+
+.middle-box{
+    height: 940px;
+    min-width: 500px;
+    position: relative;
+    left: 510px;
+    margin-bottom: 100px;
+}
+.story-list img{
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid #e84786;
+}
+.story-sec{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid lightgray;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.post-sec{
+    border-radius: 10px;
+    border: 2px solid lightgray;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 170px;
+    cursor: pointer;
+}
+.post-id span img{
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 3px solid #e84786;
+}
+.post-id{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+.post-id .img{
+    display: flex;
+    align-items: center;
+}
+.more i{
+    font-size: 30px;
+}
+.post-item img{
+    position: absolute;
+    width: 100%;
+}
+.like-sec{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 740px;
+    width: 100%;
+}
+.like-sec i{
+    font-size: 35px;
+    cursor: pointer;
+}
+.like-sec span:hover{
+    color: rgba(125, 123, 123, 0.314);
+    transition: .2s;
+}
+.commend-sec{
+    position: absolute;
+    width: 100%;
+    top: 787px;
+}
+.commend-sec h3{
+    font-size: 17px;
+}
+.commend-sec p{
+    font-size: 16px;
+}
+
+/* Right Box Section */
+
+.right-box{
+    max-width: 390px !important;
+    height: 100vh;
+    position: relative;
+    position: fixed;
+    left: 1090px;
+}
+.right-box .content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 60px;
+}
+.profile img{
+    height: 70px;
+    width: 68px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.profile h4{
+    font-size: 19px;
+    cursor: pointer;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.my-profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    
+}
+.switch span{
+    color: blue;
+    cursor: pointer;
+}
+.suggest{
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.see-all h4{
+    font-size: 20px;
+}
+.follow-sec{
+    position: absolute;
+    top: 130px;
+    width: 100%;
+}
+.suggest-profile img{
+    height: 60px;
+    width: 55px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.id-names{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.suggest-profile{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.suggest-profile span h5{
+    font-size: 18px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.suggest-profile span p{
+    font-size: 15px;
+}
+.follow-btn p{
+    color: blue;
+}
+/* Top Search Section */
+.top-search{
+    width: 100%;
+    height: 74px;
+    position: fixed;
+    opacity: 0;
+    border-bottom: 2px solid lightgray;
+    background-color: white;
+}
+.top-logo img{
+    height: 40px;
+    position: absolute;
+    top: 22px;
+}
+.search-box{
+    position: absolute;
+    left: 260px;
+    position: relative;
+    width: 220px;
+    top: 13px;
+    padding: 5px;
+}
+.search-box input{
+    height: 38px;
+    width: 230px;
+    padding-left: 29px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: lightgray;
+}
+.search-box span{
+    position: absolute;
+    top: 9px;
+    left: 11px;
+    font-size: 25px;
+    color: rgb(89, 86, 86);
+}
+.search-box span:nth-child(3){
+    position: absolute;
+    left: 240px;
+}
+.top-like{
+    position: absolute;
+    right: 40px;
+    top: 15px;
+    font-size: 30px;
+}
+
+/* Bottom Nav Section */
+
+.bottom-nav{
+    z-index: 10;
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid lightgray;
+    opacity: 0;
+}
+.bottom-nav img{
+    height: 47px;
+    width: 47px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.bottom-nav i{
+    font-size: 30px;
+    cursor: pointer;
+}
+.bottom-nav i:hover{
+    color: darkgray;
+    font-size: 33px;
+}
+/* Responsive Design */
+
+@media screen and (max-width:2290px){
+    .middle-box{
+        left: 800px;
+        transition: .2s;
+    }
+    .right-box{
+        left: 1400px;
+        transition: .2s;
+    }
+}
+@media screen and (max-width:2152px){
+    .middle-box{
+        left: 800px;
+        transition: .2s;
+    }
+    .right-box{
+        left: 1400px;
+        transition: .2s;
+    }
+}
+@media screen and (max-width:2052px){
+    .middle-box{
+        left: 700px;
+        transition: .2s;
+    }
+    .right-box{
+        left: 1300px;
+        transition: .2s;
+    }
+}
+@media screen and (max-width:1860px){
+    .middle-box{
+        left: 650px;
+        transition: .2s;
+    }
+    .right-box{
+        left: 1200px;
+        transition: .2s;
+    }
+}
+@media screen and (max-width:1675px){
+    .middle-box{
+        left: 600px;
+        transition: .2s;
+    }
+    .right-box{
+        left: 1150px;
+    }
+}
+@media screen and (max-width:1610px){
+    .middle-box{
+        left: 500px;
+        transition: .2s;
+    }
+    .right-box{
+        left: 1050px;
+        transition: .2s;
+    }
+}
+@media screen and (max-width:1470px){
+    .middle-box{
+        left: 450px;
+        transition: .2s;
+    }
+    .right-box{
+        left: 1000px;
+        transition: .2s;
+    }
+}
+@media screen and (max-width:1405px){
+    .middle-box{
+        left: 400px;
+        transition: .2s;
+    }
+    .right-box{
+        left: 950px;
+        transition: .2s;
+    }
+}
+@media screen and (max-width:1352px){
+    .middle-box{
+        left: 350px;
+        transition: .2s;
+    }
+    .right-box{
+        left: 900px;
+        transition: .2s;
+    }
+}
+@media screen and (max-width:1302px){
+    .middle-box{
+        left: 340px;
+        transition: .2s;
+    }
+    .right-box{
+        left: 860px;
+        transition: .2s;
+    }
+}
+@media screen and (max-width:1260px){
+    .middle-box{
+        left: 300px;
+        transition: .2s;
+    }
+    .right-box{
+        left: 830px;
+        transition: .2s;
+    }
+}
+
+@media screen and (max-width:1220px){
+    .middle-box{
+        left: 250px;
+        transition: .2s;
+    }
+    .right-box{
+        left: 780px;
+        transition: .2s;
+    }
+    .insta-small-logo{
+        visibility: visible;
+    }
+    .nav-name{
+        visibility: hidden;
+        transition: .2.5s;
+    }
+    .insta-text-logo{
+        visibility: hidden;
+        transition: .2.5s;
+    }
+    .left-box{
+        width: 90px !important;
+    }
+    nav{
+        width: 55px !important;
+    }
+}
+@media screen and (max-width:1185px){
+    .middle-box{
+        left: 200px;
+        transition: .2s;
+    }
+    .right-box{
+        left: 730px;
+        transition: .2s;
+    }
+}    
+@media screen and (max-width:1130px){
+    .middle-box{
+        left: 150px;
+        transition: .2s;
+    }
+    .right-box{
+        left: 680px;
+        transition: .2s;
+    }
+} 
+@media screen and (max-width:1072px){
+    .middle-box{
+        left: 120px;
+        transition: .2s;
+    }
+    .right-box{
+        left: 640px;
+        transition: .2s;
+    }
+} 
+@media screen and (max-width:1027px){
+    .middle-box{
+        left: 280px;
+        transition: .2s;
+    }
+    .right-box{
+        visibility: hidden;
+        transition: .0s;
+    }
+}
+@media screen and (max-width:950px){
+    .middle-box{
+        left: 250px;
+    }
+}
+@media screen and (max-width:900px){
+    .middle-box{
+        left: 230px;
+    }
+}
+@media screen and (max-width:850px){
+    .middle-box{
+        left: 180px;
+    }
+}
+@media screen and (max-width:760px){
+    .middle-box{
+        left: 160px;
+    }
+}
+@media screen and (max-width:720px){
+    .middle-box{
+        left: 140px;
+    }
+}
+@media screen and (max-width:685px){
+    .middle-box{
+        left: 125px;
+    }
+}
+@media screen and (max-width:660px){
+    .middle-box{
+        left: 120px;
+    }
+}
+@media screen and (max-width:640px){
+    .middle-box{
+        left: 110px;
+    }
+}
+@media screen and (max-width:610px){
+    .middle-box{
+        left: 55px;
+        top: 50px;
+    }
+    .left-box{
+        visibility: hidden;
+        transition: 0s;
+    }
+    .insta-small-logo{
+        visibility: hidden;
+        transition: 0;
+    }
+    .top-search{
+        opacity: 1;
+        z-index: 5;
+    }
+    .bottom-nav{
+        opacity: 1;
+    }
+}
+@media screen and (max-width:574px){
+    .middle-box{
+        left: 38px;
+    }
+    .search-box{
+        left: 240px;
+    }
+}
+@media screen and (max-width:542px){
+    .middle-box{
+        left: 23px;
+    }
+}
+@media screen and (max-width:415px){
+    .middle-box{
+        left: 0px;
+    }
+    .search-box{
+        left: 180px;
+    }
+}
